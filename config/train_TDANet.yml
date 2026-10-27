@@ -35,7 +35,7 @@ train:
   epoch: 100
   early_stop: 100
   path: /home/ubuntu/RSSNet/train_models/TDANet
-  gpuid: [0,1]
+  gpuid: [0]
 
 #### Optimizer settings
 optim:

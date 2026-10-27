@@ -37,7 +37,7 @@ train:
   epoch: 100
   early_stop: 20
   path: /home/onyxia/RSSNet/train_models/kernel3_up4_iter6
-  gpuid: [0, 1]
+  gpuid: [0]
 
 #### Optimizer settings
 optim:
