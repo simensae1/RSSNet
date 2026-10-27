@@ -12,13 +12,13 @@ datasets:
 
   #### set your own dataset path
   train:
-    ref_path: /home/ubuntu/RSSNet/dataset/RRUFF-2Mix/prep_spec.txt
-    list_path: /home/ubuntu/RSSNet/dataset/RRUFF-2Mix/train/mix_2_spec_train_60000.txt
-    mix_path: /home/ubuntu/RSSNet/dataset/RRUFF-2Mix/train/RRUFF_rednoise_10-20_mix_train.txt
+    ref_path: /home/onyxia/RSSNet/dataset/RRUFF-2Mix/prep_spec.txt
+    list_path: /home/onyxia/RSSNet/dataset/RRUFF-2Mix/train/mix_2_spec_train_60000.txt
+    mix_path: /home/onyxia/RSSNet/dataset/RRUFF-2Mix/train/RRUFF_rednoise_10-20_mix_train.txt
   val:
-    ref_path: /home/ubuntu/RSSNet/dataset/RRUFF-2Mix/prep_spec.txt
-    list_path: /home/ubuntu/RSSNet/dataset/RRUFF-2Mix/val/mix_2_spec_val_5000.txt
-    mix_path: /home/ubuntu/RSSNet/dataset/RRUFF-2Mix/val/RRUFF_rednoise_10-20_mix_val.txt
+    ref_path: /home/onyxia/RSSNet/dataset/RRUFF-2Mix/prep_spec.txt
+    list_path: /home/onyxia/RSSNet/dataset/RRUFF-2Mix/val/mix_2_spec_val_5000.txt
+    mix_path: /home/onyxia/RSSNet/dataset/RRUFF-2Mix/val/RRUFF_rednoise_10-20_mix_val.txt
     
 
 #### network structures
@@ -36,7 +36,7 @@ RSSNet:
 train:
   epoch: 100
   early_stop: 20
-  path: /home/ubuntu/RSSNet/train_models/kernel3_up4_iter6
+  path: /home/onyxia/RSSNet/train_models/kernel3_up4_iter6
   gpuid: [0, 1]
 
 #### Optimizer settings
@@ -56,13 +56,13 @@ scheduler:
 #### Resume training settings
 resume:
   state: false
-  path: /home/ubuntu/RSSNet/train_models/kernel3_up4_iter6
+  path: /home/onyxia/RSSNet/train_models/kernel3_up4_iter6
 
 
 #### logger
 logger:
   name: RSSNet
-  path: /home/ubuntu/RSSNet/train_models/kernel3_up4_iter6
+  path: /home/onyxia/RSSNet/train_models/kernel3_up4_iter6
   screen: true
   tofile: true
   print_freq: 100

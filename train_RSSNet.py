@@ -63,7 +63,7 @@ def train(seed = 42):
         optimizer, mode='min',
         factor=opt['scheduler']['factor'],
         patience=opt['scheduler']['patience'],
-        verbose=True, min_lr=opt['scheduler']['min_lr'])
+        min_lr=opt['scheduler']['min_lr'])
     
     # build trainer
     logger.info('Building the Trainer of RSSNet')
